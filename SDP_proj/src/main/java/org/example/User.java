@@ -6,14 +6,20 @@ import java.util.List;
 public class User {
     private String name;
     private List<Book> borrowedBooks;
+    private String password;
 
     public User(String name) {
         this.name = name;
+        this.password = password;
         this.borrowedBooks = new ArrayList<>();
     }
 
     public String getName() {
         return name;
+    }
+
+    public String getPassword() {
+        return password;
     }
 
     public void borrowBook(Book book) {
